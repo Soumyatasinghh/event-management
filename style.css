@@ -1,0 +1,43 @@
+/* ===== Color & Gradient Variables ===== */
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --card-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                   0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Backgrounds ===== */
+.bg-gradient {
+    background: var(--primary-gradient);
+}
+
+/* ===== Feature Cards ===== */
+.feature-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-shadow);
+}
+
+/* ===== Testimonial Cards ===== */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+/* ===== Auth Background ===== */
+.auth-bg {
+    background: var(--primary-gradient);
+}
